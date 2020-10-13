@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome page</title>
+    
+	<style type="text/css">
+		.abc{
+	height: 370px;
+    /*width: 209px;*/
+    width: 25%;
+	/*background-color: grey;*/
+	float: left;
+
+
+   }
+   .xyz{
+   	
+   	height: 100%;
+   	width: 100%;
+   /*	background-color: red;*/
+   }
+   .abc h2{
+   	text-align: center;
+   }
+   .abc img{
+    margin-left: 63px;
+   }
+   .abc h3{
+   	text-align: center;
+   }
+   .abc p{
+   	text-align: center;
+   }
+   .btn{
+   	height: 30px;
+   	width: 100px;
+   	margin-left: 610px;
+   	background-color: #2196f3;
+   }
+	</style>
+</head>
+<body>
+  {{msg}}
+	<h1 style="text-align: center; color: red">welcome to our page</h1>
+	<a href="addfood"><button class="btn">add food</button></a>
+  <a href="logout"><button class="btn">Logout</button></a>
+ <div class="xyz">
+   {{#each dataa}}
+   <div class="abc">
+   	<h2>{{this.name}}</h2>
+   	<img src="/upload/{{this.image}}" height="150px" width="200px">
+   	<h3>{{this.price}}</h3>
+   	<p>{{this.description}}</p>
+   	<a href="update?id={{this._id}}"><button style="margin-left: 107px;">update</button></a>
+   	<a href="deleteFood?id={{this._id}}"><button>delete</button></a>
+   </div>
+    {{/each}}
+ </div>
+ 
+</body>
+</html>

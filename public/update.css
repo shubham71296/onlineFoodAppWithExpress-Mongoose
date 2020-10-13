@@ -1,0 +1,21 @@
+.container{
+	width: 300px;
+	height: 500px;
+	padding: 30px;
+	margin-top: 30px;
+	background-color: black;
+}	
+
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 10px;
+    color: #c10528;
+    background-color: #1b5f2f;
+}
+body{
+	background-color: grey;
+}
+label{
+	color: white;
+}

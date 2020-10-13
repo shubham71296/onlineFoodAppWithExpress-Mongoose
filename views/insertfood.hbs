@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>insert food</title>
+	<style type="text/css">
+		.xyz{
+			background-color: #34422ed6;
+			width: 300px;
+			height: 340px;
+			padding: 50px;
+			margin:100px;
+            margin-top: 20px;
+		}
+	   label{
+	   	color: white;
+	   }
+	   h1{
+	   	background-color: #b39745;
+	   	font-family: sans-serif;
+	   	color: #7cffe7fa;
+	   }
+
+	</style>
+</head>
+<body style="background-color: #b0a2bf;">
+    <h1 style="text-align: center;">Plzz insert food that you want to add</h1>
+  <center><div class="xyz">
+    	<form action="foodsubmit" method="post" enctype="multipart/form-data">
+    		<h1>insert food..!!</h1>
+    		<table cellpadding="10px">
+    			<tr>
+    				<td><label>Name:</label></td>
+    				<td><input type="text" name="fname"></td>
+    			</tr>
+    			<tr>
+    				<td><label>Price:</label></td>
+    				<td><input type="text" name="fprice"></td>
+    			</tr>
+    			<tr>
+    				<td><label>Image:</label></td>
+    				<td><input type="file" name="fpic"></td>
+    			</tr>
+    			<tr>
+    				<td><label>Description:</label></td>
+    				<td><input type="text" name="fdesc"></td>
+    			</tr>
+    			<tr>
+    				<td><input type="submit" value="submit"></td>
+    			</tr>
+    		</table>
+    	</form>
+    </div> </center>
+</body>
+</html>

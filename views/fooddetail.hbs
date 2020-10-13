@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>food detail</title>
+	<style type="text/css">
+		.abc{
+			width: 300px;
+			height: 500px;
+			background-color: black;
+			margin-top: 30px;
+			margin-left: 495px;
+			padding: 20px;
+		}
+		.xyz{
+			color: white;
+		}
+	</style>
+</head>
+<body style="background-color: #a09d9c">
+	<h1 style="text-align: center;background-color: green">food details...</h1>
+	<div class="abc">
+	{{#if dataa}}
+	
+    <form action="fooddetailtocart" method="post" enctype="multipart/form-data">
+    	<input type="text" name="id" value="{{dataa._id}}"><br><br>
+    	<img src="/upload/{{dataa.image}}" name="dpic" height="250px" width="300px">
+        <!--<input type="text" src="/upload/{{dataa.image}}" name="dpic" width="300px" height="250px">-->
+    	<table style="border-spacing: 15px">
+    		<tr>
+    			<td class="xyz">dish name:</td>
+    			<td><input type="text" name="dname" value="{{dataa.name}}"></td>
+    		</tr>
+    		<tr>
+    			<td class="xyz">price:</td>
+    			<td><input type="text" name="dprice" value="{{dataa.price}}"></td>
+    		</tr>
+    		<tr>
+    			<td class="xyz">description:</td>
+    			<td><input type="text" name="ddesc" value="{{dataa.description}}"></td>
+    		</tr>
+    		<tr>
+    			<td class="xyz">quantity:</td>
+    			<td><input type="text" name="fquantity"></td>
+    		</tr>
+    		<tr>
+    			<td><input type="submit" value="add to cart"></td>
+    			
+    		</tr>
+    	</table>
+    </form>
+  
+    {{/if}}
+    </div>
+</body>
+</html>
